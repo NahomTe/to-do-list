@@ -1,13 +1,87 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #070707;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.ToDoList {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 30px;
+  padding: 20px;
+}
+
+button{
+  cursor: pointer;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.7rem;
+  transition: background-color 0.5s;
+}
+
+.add-button{
+  background-color: #3db341;
+  margin-left: 10px;
+}
+
+.add-button:hover{
+  background-color: #369633;
+}
+
+.delete-btn {
+  background-color: #e97ac4;
+}
+
+.delete-btn:hover {
+  background-color: #d64fcf;
+}
+
+.move-btn {
+  background-color: #9b9b9b;
+}
+
+.move-btn:hover {
+  background-color: #7e7e7e;
+}
+
+
+input[type = text]{
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #e0e0e0;
+  background-color: #eeeded;
+  font-size: 1.6rem;
+  color: #000000;
+}
+
+ol{
+  list-style-type: none;
+  padding: 0;
+}
+
+li{
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 10px;
+  margin: 10px;
+}
+
+.text{
+  flex: 1;
+}
+
+.delete-btn, .move-btn{
+  margin-left: 10px;
 }
